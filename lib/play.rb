@@ -37,7 +37,8 @@ end
 
 # Define your play method below
 def play(board)
-  until position_taken?(board, location) == true
+  index = 0
+  until position_taken?(board, index) == true
     9.times{turn(board)}
     break
   end
