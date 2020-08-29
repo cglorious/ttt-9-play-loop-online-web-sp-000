@@ -37,7 +37,7 @@ end
 
 # Define your play method below
 def play(board)
-  while condition
+  while position_taken?(board, location) == false
     turn(board)
   end
 end
